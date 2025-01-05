@@ -1,0 +1,156 @@
+/* Catppuccin Theme - Simple CSS Example */
+
+/* Define Catppuccin Color Palette */
+:root {
+    --catppuccin-base: #1e1e2e;
+    --catppuccin-mantle: #181825;
+    --catppuccin-crust: #11111b;
+    --catppuccin-surface0: #313244;
+    --catppuccin-surface1: #45475a;
+    --catppuccin-surface2: #585b70;
+    --catppuccin-overlay0: #6c7086;
+    --catppuccin-overlay1: #7f849c;
+    --catppuccin-overlay2: #9399b2;
+    --catppuccin-subtext0: #a6adc8;
+    --catppuccin-subtext1: #bac2de;
+    --catppuccin-text: #cdd6f4;
+    --catppuccin-lavender: #b4befe;
+    --catppuccin-blue: #89b4fa;
+    --catppuccin-sapphire: #74c7ec;
+    --catppuccin-sky: #89dceb;
+    --catppuccin-teal: #94e2d5;
+    --catppuccin-green: #a6e3a1;
+    --catppuccin-yellow: #f9e2af;
+    --catppuccin-peach: #fab387;
+    --catppuccin-maroon: #eba0ac;
+    --catppuccin-red: #f38ba8;
+    --catppuccin-mauve: #cba6f7;
+    --catppuccin-pink: #f5c2e7;
+    --catppuccin-flamingo: #f2cdcd;
+    --catppuccin-rosewater: #f5e0dc;
+}
+
+/* Apply Catppuccin Theme Colors */
+body {
+    background-color: var(--catppuccin-base);
+    color: var(--catppuccin-text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    gap: 10px; /* Add some space between the text box and the button */
+}
+
+input[type="text"] {
+    background-color: var(--catppuccin-surface0); /* Background color */
+    color: var(--catppuccin-text); /* Text color */
+    border: 1px solid var(--catppuccin-overlay0); /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the text box */
+    font-size: 16px; /* Font size */
+    flex-grow: 1; /* Allow the text box to grow and fill the available space */
+}
+
+input[type="text"]::placeholder {
+    color: var(--catppuccin-overlay1); /* Placeholder text color */
+}
+
+input[type="text"]:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: var(--catppuccin-lavender); /* Border color on focus */
+    box-shadow: 0 0 5px var(--catppuccin-lavender); /* Subtle shadow on focus */
+}
+
+button {
+    background-color: var(--catppuccin-peach); /* Use your desired background color */
+    color: var(--catppuccin-crust); /* Use your desired text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px; /* Adjust the radius value to make the button rounded */
+}
+
+button:hover {
+    background-color: var(--catppuccin-maroon); /* Use your desired hover background color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--catppuccin-lavender);
+}
+
+.news {
+    background-color: var(--catppuccin-surface1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px var(--catppuccin-overlay0);
+}
+
+.news h3 {
+    color: var(--catppuccin-lavender);
+    margin-bottom: 10px;
+}
+
+.news-article {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--catppuccin-surface2);
+    box-shadow: 0 2px 4px var(--catppuccin-overlay1);
+}
+
+.news-article h4 {
+    margin: 0 0 5px 0;
+    color: var(--catppuccin-text);
+}
+
+.news-article p {
+    margin: 0 0 5px 0;
+    color: var(--catppuccin-subtext0);
+}
+
+.news-article a {
+    color: var(--catppuccin-sky);
+    text-decoration: none;
+}
+
+.news-article a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: var(--catppuccin-sky);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--catppuccin-blue);
+    text-decoration: underline;
+}
+
+
+.container {
+    background-color: var(--catppuccin-surface0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--catppuccin-overlay0);
+}
+
+.header {
+    background-color: var(--catppuccin-mantle);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: var(--catppuccin-mantle);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
